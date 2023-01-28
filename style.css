@@ -1,0 +1,173 @@
+/* for removing default margin and padding */
+*{
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    list-style-type: none;
+}
+/* for setting properties of nav bar  */
+nav{
+    background-color: rgb(161, 50, 161);
+    color:white;
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    padding: 0 3vw;
+    font-size: 24px;
+    font-weight: bolder;
+}  
+/* for main container  */
+.gamecontainer{
+    margin-top: 10px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+}
+/* left container inside main container  */
+.container{
+    margin:10px 0;
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+}
+/* for boxes  */
+.box{
+    border:2px solid black;
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;
+    
+}
+.box:hover{
+    background-color: blanchedalmond;
+}
+
+/* for removing borders */
+.bl-0{
+    border-left: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+     border-bottom: 0;
+}
+
+
+/* for right information container inside main container  */
+.gameinfo{
+    padding: 0 10vw;
+    margin:20px 0;
+}
+
+/* for styling info container inside gameinfo container */
+.game{
+    margin-top: 20px;
+    padding: 0 8vw;
+}
+/* for styling turn text  */
+#info{
+    font-size: 24px;
+    text-align: center;
+}
+
+ /* for reset button */
+ #reset{
+    width: 100px;
+    height: 33px;
+    background-color: purple;
+    color: white;
+    font-size: 20px;
+    margin-top: 2vh;
+    border-radius: 7px;
+    border:2px solid black;
+    cursor: pointer;
+    margin-left: 12px;
+} 
+.won-lossimg{
+    width: 180px;
+    height: 165px;
+    margin-top: 75px;
+    display: none;
+}
+/* score information container  */
+.scoreinfo{
+    position: absolute;
+    bottom: 40px;
+    right:20px;
+}
+/* table inside container  */
+table,th,td{
+    border: 2px solid  black;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+    font-weight: bolder;
+    background-color: rgb(161, 50, 161);
+    color: white;
+}
+
+/* properties of cutting in rows,columns and diagonals */
+.cut{
+    background-color: rgb(161, 50, 161);
+    display: none;
+    position: absolute;
+}
+#row1{
+    top: 124px;
+    height: 6px;
+    width: 459px;
+    left: 98px;
+}
+#row2{
+    top: 259px;
+    height: 6px;
+    width: 466px;
+    left: 91px;
+}
+#row3{
+    top: 388px;
+    height: 6px;
+    width: 466px;
+    left: 91px;
+}
+ #col1{
+    top: 64px;
+    height: 400px;
+    width: 5px;
+    left: 182px;
+
+}
+#col2{
+    top: 64px;
+    height: 400px;
+    width: 5px;
+    left: 319px;
+    
+}
+#col3{
+    top: 64px;
+    height: 400px;
+    width: 5px;
+    left: 462px;
+    
+}  
+#diagonal-1{    
+    right: 779px;
+    top: 263px;
+    transform: rotate(45deg);  
+    height: 6px; 
+    width: 511px; 
+}
+#diagonal-2{    
+    right: 779px;
+    top: 250px;
+    transform: rotate(135deg); 
+    height: 6px; 
+    width: 511px;    
+}
