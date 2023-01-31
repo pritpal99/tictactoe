@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <!-- navigation bar -->
+    <nav>
+        <ul>  
+           <li>Tic Tac Toe</li> 
+        </ul>
+    </nav>
+
+    <!-- main container -->
+    <div class="gamecontainer">
+        <!-- container for 9 boxes or divs -->
+        <div class="container">
+            <div id="b1" onclick="player_computer_move(this)" class="box bl-0 bt-0"></div>
+            <div id="b2" onclick="player_computer_move(this)" class="box bt-0"></div>
+            <div id="b3" onclick="player_computer_move(this)" class="box bt-0 br-0"></div>
+            <div id="b4" onclick="player_computer_move(this)" class="box bl-0"></div>
+            <div id="b5" onclick="player_computer_move(this)" class="box"></div>
+            <div id="b6" onclick="player_computer_move(this)"  class="box br-0"></div>
+            <div id="b7" onclick="player_computer_move(this)" class="box bl-0 bb-0"></div>
+            <div id="b8" onclick="player_computer_move(this)" class="box bb-0"></div>
+            <div id="b9" onclick="player_computer_move(this)" class="box bb-0 br-0"></div>
+        </div>
+
+        <!-- containers for cutting lines -->
+        <div id="row1" class="cut"></div>
+        <div id="row2" class="cut"></div>
+        <div id="row3" class="cut"></div>
+        <div id="col1" class="cut"></div>
+        <div id="col2" class="cut"></div>
+        <div id="col3" class="cut"></div>
+        <div id="diagonal-1" class="cut"></div>
+        <div id="diagonal-2" class="cut"></div>
+
+        <!-- container for game Information -->
+        <div class="gameinfo">
+            <h1>WELCOME TO TIC TAC TOE</h1>
+            <div class="game">
+                <span id="info">&nbsp Let's Start</span><br>
+                <button onclick="reset()" id="reset">Reset</button><br>
+                <img class="won-lossimg" src="images\winner.gif" alt="">
+                <img class="won-lossimg" src="images\loss.gif" alt="">
+                <img class="won-lossimg" src="images\tie.gif" alt="">
+            </div>
+        </div>
+
+        <!-- container for score Information -->
+        <div class="scoreinfo">
+           <table>
+            <caption style="font-size:17px;color:black">Match Information</caption>
+            <tr>
+                <td>Player's Score</td>
+                <td id="player-score">0</td>
+            </tr>
+            <tr>
+                <td>Computer Score</td>
+                <td id="computer-score">0</td>
+            </tr>
+            <tr>
+                <td>Match Tie</td>
+                <td id="tie-score">0</td>
+            </tr>
+           </table>
+            
+        </div>
+    </div>
+    <script src="script1.js"></script>
+    
+</body>
+</html>
