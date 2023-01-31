@@ -45,6 +45,7 @@ function playerTurn(){
     }
     placeMove(idInt,"X");
     document.getElementById(id).innerHTML="X";
+    document.getElementById(id).style.pointerEvents='none';
     
 }
 //computerMove by using random method, checking valid move then place that move
@@ -60,6 +61,7 @@ function computerTurn(){
     placeMove(move,"0");
     let m="b"+move;
     document.getElementById(m).innerHTML="0";
+    document.getElementById(m).style.pointerEvents='none';
     if(finished()){
         disable(); //for disabling the remaining boxes, when anyone won
         return;
