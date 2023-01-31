@@ -27,25 +27,17 @@ function player_computer_move(a)
     //computerTurn
     setTimeout(computerTurn,500); 
 }
-// function sleepy(ms){
-//     var start=new Date().getTime();
-//     for(var i=0;i<1e7;i++){
-//         if((new Date().getTime()-start>ms))
-//           break;
-//     }
-// }
 
 //logic for playerTurn ,firstly check valid move then place that move by assigning 'X'
 function playerTurn(){
     document.getElementById("info").innerHTML="Turn of computer"
-    while(true){
+    
         if(validMove(idInt)){
-            break;
+            placeMove(idInt,"X");
+            document.getElementById(id).innerHTML="X";
+            document.getElementById(id).style.pointerEvents='none';
         }
-    }
-    placeMove(idInt,"X");
-    document.getElementById(id).innerHTML="X";
-    document.getElementById(id).style.pointerEvents='none';
+    
     
 }
 //computerMove by using random method, checking valid move then place that move
